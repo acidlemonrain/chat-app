@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="273" height="219" viewBox="0 0 273 219">
+  <g id="组_1" data-name="组 1" transform="translate(-700 -444)">
+    <g id="椭圆_1" data-name="椭圆 1" transform="translate(760 471)" fill="#727fb4" stroke="#707070" stroke-width="1">
+      <ellipse cx="106.5" cy="96" rx="106.5" ry="96" stroke="none"/>
+      <ellipse cx="106.5" cy="96" rx="106" ry="95.5" fill="none"/>
+    </g>
+    <g id="多边形_1" data-name="多边形 1" transform="translate(700 444)" fill="#f2a1a1">
+      <path d="M 199.1231689453125 168.5 L 0.8768236637115479 168.5 L 100 0.9818320274353027 L 199.1231689453125 168.5 Z" stroke="none"/>
+      <path d="M 100 1.963699340820313 L 1.753677368164063 168 L 198.2463226318359 168 L 100 1.963699340820313 M 100 0 L 200 169 L 0 169 L 100 0 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>
