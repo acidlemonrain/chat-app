@@ -6,7 +6,7 @@ import io from "socket.io-client";
 
 const store = new Vuex.Store({
   state: {
-    socket: io("http://localhost:3000"),
+    socket: io("http://106.15.183.147:5012"),
     user: null,
     token: null,
     clock: 1,
