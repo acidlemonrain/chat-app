@@ -1,0 +1,46 @@
+.friend-panel{
+  position: absolute;
+  top:40px;
+  left: -250px;
+  width: 350px;
+  z-index: 8;
+  transform: translate(-0px,-1000px);
+  opacity: 0;
+  background-color: darken($background,10%);
+  cursor: default;
+ .content{
+   overflow-y: scroll;
+   height: 450px;
+   background-color:  $background;
+ }
+}
+.friend-item{
+  text-align: left;
+  padding: 10px;
+
+}
+
+.msg-notify{
+  font-size: 9px;
+  background-color: red;
+  padding: 4px;
+}
+.friend_panel_normal{
+  opacity: 1;
+  transform: translate(0px,0px);
+}
+
+.user-ani{
+  animation: fadein .7s;
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+    transform: translate(0,-30%);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}

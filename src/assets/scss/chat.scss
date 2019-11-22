@@ -1,0 +1,55 @@
+@import "color";
+.chat-msg-window{
+  height: 400px;
+  width: 100%;
+  background-color: $background-light;
+  overflow-y: scroll;
+  position: relative;
+}
+.chat-msg{
+  border: 1px solid black;
+  margin: 0 10px;
+  padding: 7px 10px;
+  background-color: $background;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: 0px;
+    right: -8px;
+    border: 10px solid transparent;
+    border-top: 10px solid $background;
+    clear: both;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    visibility: visible;
+    top: -1px;
+    right: -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+  }
+}
+.chat-msg-other{
+  &::after{
+    top: 0px;
+    left: -8px;
+    right: unset;
+  }
+  &::before{
+    top: -1px;
+    left: -10px;
+    right: unset;
+  }
+}
+.tip-form{
+  width: 400px;
+  background-color: $background;
+  position: fixed;
+  z-index: 7;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,0);
+}

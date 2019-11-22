@@ -1,0 +1,15 @@
+@import "color";
+.request-item{
+  background-color: lighten($background-purple,10%);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+
+.basic-image{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}

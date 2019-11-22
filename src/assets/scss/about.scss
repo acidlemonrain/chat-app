@@ -1,0 +1,13 @@
+@import "color";
+.des-image{
+  height: 120px;
+  width: 200px;
+  border: $background-light;
+}
+.des-text-box{
+  height: 250px;
+  width: 440px;
+  border: 3px solid rgba(0, 0, 0, 0.18);
+  background-color: rgba(66, 52, 162, 0.34);
+  padding:20px
+}

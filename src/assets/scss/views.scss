@@ -1,0 +1,17 @@
+@import "color";
+@import "number";
+article{
+  width: 900px;
+  height:calc(100vh - 100px);
+  margin: auto;
+  margin-top: 30px;
+  overflow-y: scroll;
+  background-image:
+          radial-gradient(
+                          circle at bottom right,
+                          $background,
+                          $background-purple,
+                          rgba(0, 0, 0, 0.53)
+          );
+  color: #c0c0c0;
+}

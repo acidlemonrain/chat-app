@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <myMask></myMask>
+    <reqForm></reqForm>
+    <login-form></login-form>
+    <app-nav></app-nav>
+    <article>
+      <router-view />
+    </article>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import appNav from "./components/appNav";
+import LoginForm from "./components/common/LoginForm";
 
-#nav {
-  padding: 30px;
+import myMask from "./components/common/myMask";
+import friendPanel from "./components/friendPanel";
+import reqForm from "./components/common/reqForm";
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  components: { appNav, myMask, LoginForm, friendPanel, reqForm },
+  created() {
+    if (!this.$store.state.isInit && this.user) {
+      this.$store.dispatch("initUser", { user: this.user });
     }
   }
-}
-</style>
+};
+</script>
+<style lang="scss"></style>

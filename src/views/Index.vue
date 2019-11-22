@@ -1,5 +1,7 @@
 <template>
-    $END$
+    <div>
+        index
+    </div>
 </template>
 
 <script>

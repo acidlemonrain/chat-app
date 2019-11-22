@@ -1,0 +1,71 @@
+@import "color";
+button{
+  padding: 3px 7px;
+  background-color: #5C7E10;
+  color: white;
+  font-weight: 100;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+}
+
+.small-btn{
+  padding: 1px
+}
+
+
+.box{
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  background-color: $background-light;
+  box-shadow: 0px 0px 6px $background-purple;
+}
+
+.inner-box{
+  margin: 10px;
+  padding: 10px;
+  background-color: $background;
+  box-shadow: 0px 0px 6px $background-purple;
+  border-radius: 5px;
+  &:hover{
+    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.padding{
+  padding: 10px;
+}
+
+.bottom-line{
+  padding-bottom: 4px;
+  border-bottom: 1px solid gray;
+}
+
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-g{
+  padding: 6px;
+
+}
+
+.btns{
+  padding: 6px;
+  cursor: pointer;
+  border-bottom: 3px solid $primary-dark;
+}
+
+.active{
+  background-color: $background;
+  border: 2px solid $background-purple;
+  border-bottom: none;
+}

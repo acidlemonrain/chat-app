@@ -1,0 +1,26 @@
+@import "color";
+@import "number";
+nav{
+  top: 10px;
+  width: 900px;
+  height: $navHeight;
+  background-color: $navcolor;
+  margin: auto;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.52);
+  padding: 0;
+  .nav-item{
+    height: 36px;
+    display: inline-block;
+    font-size: 14px;
+    color: $white-text;
+    padding: 8px 10px  ;
+    border: none;
+    border-right:1px solid rgba(0, 0, 0, 0.52);
+  }
+
+
+
+}
+
+

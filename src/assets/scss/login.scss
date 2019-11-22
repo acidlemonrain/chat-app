@@ -1,0 +1,25 @@
+@import "color";
+.login{
+  &-form{
+    position: fixed;
+    z-index: 9;
+    top: 20vh;
+    left: 50vw;
+    transform: translate(-50%,0);
+    width: 300px;
+    padding: 40px 10px;
+    background-color: $background-light;
+    border: 3px solid rgba(0, 0, 0, 0.7);
+    label{
+      color: $white-text;
+    }
+    input{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    button{
+      margin-right: 10px;
+    }
+
+  }
+}
