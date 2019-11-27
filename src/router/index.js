@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Index.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Weibo.vue')
   },
   {
     path: '/home',

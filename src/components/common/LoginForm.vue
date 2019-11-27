@@ -19,7 +19,10 @@
         name: "LoginForm",
         data() {
             return {
-                form: {}
+                form: {
+                    username:'hyc',
+                    password:'123'
+                }
             }
         },
         methods: {

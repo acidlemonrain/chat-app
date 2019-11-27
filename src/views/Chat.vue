@@ -10,9 +10,11 @@
       <button @click="submit_tipform">确定</button>
     </div>
     <div class="chat-msg-window" v-show="isHistories">
+      <p class="subtitle">{{friends[urlId].nickname}}和我的聊天记录</p>
       <chat-msg v-for="msg in histories" :key="msg.id" :msg="msg"></chat-msg>
     </div>
     <div class="chat-msg-window" v-show="!isHistories">
+      <p class="subtitle">正在和{{friends[urlId].nickname}}聊天</p>
       <chat-msg
         v-for="msg in friends[urlId].msgs"
         :key="msg.id"
