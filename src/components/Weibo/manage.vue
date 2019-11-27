@@ -5,7 +5,7 @@
         </p>
         <div class="inner-box" v-for="wb in user.weibos" :key=wb.id >
             <p>{{wb.content}}</p>
-            <img class="weibo-image"   v-if="wb.image !== ''" :src="'http://localhost:3000/file/'+wb.image" alt="">
+            <img class="weibo-image"   v-if="wb.image !== ''" :src="'http://106.15.183.147:3000/file/'+wb.image" alt="">
             <div>
                 <button @click="remove(wb)">删除</button>
             </div>
