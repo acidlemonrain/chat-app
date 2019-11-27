@@ -17,7 +17,7 @@
     </div>
 
     <weibos v-show="status == 'weibo'" :u="u"></weibos>
-    <board v-show="status == 'board'" :u="u"></board>
+    <board @board="init" v-show="status == 'board'" :u="u"></board>
   </div>
 </template>
 

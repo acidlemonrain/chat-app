@@ -4,11 +4,12 @@
         <p class="text-small"> {{weibo.gen|local}} </p>
         <p>{{weibo.content}}</p>
 
-        <img class="weibo-image"   v-if="weibo.image !== ''" :src="'http://localhost:3000/file/'+weibo.image" alt="">
+        <img class="weibo-image"   v-if="weibo.image !== ''" :src="'http://106.15.183.147:5012/file/'+weibo.image" alt="">
 
         <p class="subtitle-1" @click="get_comments">评论区</p>
 
         <div v-for="ct in comments" :key="ct.id">
+
            <p> {{ct.author.nickname}} : <span class="text-small"> {{ct.content}} </span></p>
         </div>
         <textarea v-model="content" name="" id="" cols="30" rows="5">

@@ -36,7 +36,7 @@
                     author:this.user,
                     content:this.content
                 }).then(res=>{
-                    console.log(res)
+                   this.$emit('board')
                 })
             }
         },

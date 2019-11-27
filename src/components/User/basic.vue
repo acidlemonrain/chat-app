@@ -14,7 +14,7 @@
         </p>
 
         <p>
-            生日 : <span class="info"> {{ u.birth }} </span>
+            生日 : <span class="info"> {{ u.birth |local}} </span>
         </p>
         <p>
             性别 : <span class="info"> {{ u.sex?'男':'女' }} </span>
