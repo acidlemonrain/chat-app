@@ -15,7 +15,7 @@
       >
     </div>
     <div v-show="status == 'weibo'">
-        <make-weibo v-if="user !== null"></make-weibo>
+        <make-weibo  @created=refresh v-if="user !== null"></make-weibo>
         <weiboItem v-for="(weibo, index) in weibos" :key="index" :weibo="weibo">
         </weiboItem>
         <button class="weibo-loadmore" @click="page++" v-if="is_more">
@@ -54,7 +54,12 @@ export default {
         if (res.data.length == 0) this.is_more = false;
         this.weibos = [...this.weibos, ...res.data];
       });
-    }
+    },
+      refresh(){
+        this.page = 1 ;
+        this.weibos = []
+          this.get_weibos()
+      }
   },
   created() {
     this.get_weibos();

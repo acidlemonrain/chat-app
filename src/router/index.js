@@ -28,6 +28,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Plaza.vue')
   },
   {
+    path: '/anoys',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Anoys.vue')
+  },
+  {
     path: '/user/:id',
     component: () => import(/* webpackChunkName: "about" */ '../views/User.vue')
   },

@@ -31,7 +31,11 @@
                    form.append('author',this.user.id)
                    form.append('content',this.content)
                    this.axios.post('weibo/create',form).then(res=>{
-                       console.log(res)
+                      this.$emit('created',null)
+                       alert('发表成功')
+                       this.hide_mask()
+                       this.content = ''
+                       this.$refs["img"].src ='';
                    })
                }
             },

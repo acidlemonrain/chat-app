@@ -47,6 +47,11 @@ Vue.mixin({
     }
   },
   methods: {
+    refresh_user(){
+      this.axios.post('user/refresh',{id:this.user.id}).then(res=>{
+        this.$store.dispatch('initUser',(res.data))
+      })
+    },
     isFreeze(date){
       let now = moment(new Date())
       let freeze = moment(date)
